@@ -18,7 +18,7 @@
         
 
             <div id="sup" class="container">
-                <header class="d-flex flex-wrap justify-content-center  py-3 mb-3 border-bottom">
+                <header class="d-flex flex-wrap justify-content-center  py-3 mb-2 border-bottom">
                 <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
     
                     <img id="sigma" src="sigma.png" alt="sigma" width="25">
@@ -26,17 +26,16 @@
                 </a>
 
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"></a></li>     
-                    <li class="nav-item"><a href="#" class="nav-link">Activities</a></li>
-                    <li class="nav-item"><a href="sobre.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li> 
+                    &ensp;    
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
                 </ul>
                 </header>
             </div>
 
         <div class="box">
 
-            <div id="side" class="d-flex flex-column flex-shrink-0 p-1" style="width: 230px;">
+            <div id="side" class="col-lg-6 d-flex flex-column flex-shrink-0 py-3" style="width: 230px;">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
                 <span class="fs-4"></span>
@@ -49,22 +48,38 @@
                     Home
                     </a>
                 </li>
+
                 <li>
-                    <a href="#" class="nav-link link-dark">
+                    <a href="#raiz" class="nav-link link-dark">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                    Exemples
+                    Raízes da função
                     </a>
                 </li>
+            
+                <li>
+                    <a href="#exemplo" class="nav-link link-dark">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                    Exemplos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#grafico" class="nav-link link-dark">
+                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                    Gráfico
+                    </a>
+                </li>
+
                 <li>
                     <a href="#" class="nav-link link-dark">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                    Activities
+                    Atividades
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link link-dark">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-                    Video
+                    Vídeo
                     </a>
                 </li>
                 </ul>
@@ -75,100 +90,102 @@
 
 
             <div id="pag" class="container col-xxl-18 px-4 py-1">
-                <div class="row flex-lg-row-reverse g-0 py-5">
+                <div class="row flex-lg-row-reverse g-0 py-4">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="funcao2grauconcavidade.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Função Quadrática</h1>
-                    <p class="lead">A função quadrática, também chamada de função polinomial de 2º grau, é uma função representada pela seguinte expressão:
-
-                        f(x) = ax2 + bx + c
-                        
-                        Onde a, b e c são números reais e a ≠ 0.
-                        
-                        Exemplo:
-                        
-                        f(x) = 2x2 + 3x + 5,
-                        
-                        sendo,
-                        a = 2
-                        b = 3
-                        c = 5
-                        
-                        Nesse caso, o polinômio da função quadrática é de grau 2, pois é o maior expoente da variável.
+                    <h1 class="display-5 fw-bold lh-3 mb-0">Função Quadrática</h1>
+                    <p class="lead">A <strong>função quadrática</strong>, também chamada de <strong>função polinomial de 2º grau</strong>, é uma função representada pela seguinte expressão: <br>
+                        <br>
+                        f(x) = ax<sup>2</sup> + bx + c <br>
+                        <br>
+                        Onde <b>a</b>, <b>b</b> e <b>c</b> são números reais e a ≠ 0.<br>
+                        <br>
+                        <strong id="ex">Exemplo:</strong><br>
+                        <br>
+                        f(x) = 2x<sup>2</sup> + 3x + 5,<br>
+                        <br>
+                        sendo,<br>
+                        a = 2<br>
+                        b = 3<br>
+                        c = 5<br>
+                        <br>
+                        Nesse caso, o polinômio da função quadrática é de grau 2, pois é o maior expoente da variável.<br>
                     </p>
                 </div>
                 <div class="col-lg-12 lead">
-
-                        Como resolver uma função quadrática?
-                        Confira abaixo o passo-a-passo por meio um exemplo de resolução da função quadrática:
-                        
-                        Exemplo
-                        Determine a, b e c na função quadrática dada por: f(x) = ax2 + bx + c, sendo:
-                        
-                        f (-1) = 8
-                        f (0) = 4
-                        f (2) = 2
-                        
-                        Primeiramente, vamos substituir o x pelos valores de cada função e assim teremos:
-                        
-                        f (-1) = 8
-                        a (-1)2 + b (–1) + c = 8
-                        a - b + c = 8 (equação I)
-                        
-                        f (0) = 4
-                        a . 02 + b . 0 + c = 4
-                        c = 4 (equação II)
-                        
-                        f (2) = 2
-                        a . 22 + b . 2 + c = 2
-                        4a + 2b + c = 2 (equação III)
-                        
-                        Pela segunda função f (0) = 4, já temos o valor de c = 4.
-                        
-                        Assim, vamos substituir o valor obtido para c nas equações I e III para determinar as outras incógnitas (a e b):
-                        
-                        (Equação I)
-                        
-                        a - b + 4 = 8
-                        a - b = 4
-                        a = b + 4
-                        
-                        Já que temos a equação de a pela Equação I, vamos substituir na III para determinar o valor de b:
-                        
-                        (Equação III)
-                        4a + 2b + 4 = 2
-                        4a + 2b = - 2
-                        4 (b + 4) + 2b = - 2
-                        4b + 16 + 2b = - 2
-                        6b = - 18
-                        b = - 3
-                        
-                        Por fim, para encontrar o valor de a substituímos os valores de b e c que já foram encontrados. Logo:
-                        
-                        (Equação I)
-                        
-                        a - b + c = 8
-                        a - (- 3) + 4 = 8
-                        a = - 3 + 4
-                        a = 1
-                        
-                        Sendo assim, os coeficientes da função quadrática dada são:
-                        
-                        a = 1
-                        b = - 3
-                        c = 4
-                        
-                        Raízes da Função
-                        As raízes ou zeros da função do segundo grau representam aos valores de x tais que f(x) = 0. As raízes da função são determinadas pela resolução da equação de segundo grau:
-                        
-                        f(x) = ax2 +bx + c = 0
+                        <h3 id="raiz" class="fw-bold lh-1 mb-3">Raízes da Função</h3><br>
+                        As raízes ou zeros da função do segundo grau representam aos valores de x tais que f(x) = 0. As raízes da função são determinadas pela resolução da equação de segundo grau:<br>
+                        <br>
+                        <strong>f(x) = ax <sup>2</sup> +bx + c = 0</strong><br>
                         
                         Para resolver a equação do 2º grau podemos utilizar vários métodos, sendo um dos mais utilizados é aplicando a Fórmula de Bhaskara, ou seja:</p>
+
+                        <img id="form" src="formula.jpeg" alt="Fórmula de Bhaskara" width="500px">
+
+                        <p class="lead">O vértice irá representar o ponto de valor máximo da função quando a parábola estiver voltada para baixo e o valor mínimo quando estiver para cima.<br>
+                        <br>
+                        É possível identificar a posição da concavidade da curva analisando apenas o sinal do coeficiente a. Se o coeficiente for positivo, a concavidade ficará voltada para cima e se for negativo ficará para baixo.</p>
+                        
+
+                        <h3 class="fw-bold lh-1 mb-3"  id="exemplo">Como resolver uma função quadrática? </h3> <br>
+                        Confira abaixo o passo-a-passo por meio um exemplo de resolução da função quadrática:<br>
+                        <br>
+                        <h5 class="lead"> <b><u> Exemplo: </u></b></h5>
+                        Encontre os zeros da função f(x) = x2 – 5x + 6. <br>
+                        <br>
+                        <strong>Solução:</strong><br>
+                        <br>
+                        Sendo,<br>
+                        a = 1<br>
+                        b = – 5<br>
+                        c = 6<br>
+                        <br>
+                        Substituindo esses valores na fórmula de Bhaskara, temos: <br>
+                        <img id="form" src="exemplo.png" alt="Exemplo">
+                        <br>
+                        Portanto, as raízes são 2 e 3. <br>
+                        <br>
+                        Observe que a quantidade de raízes de uma função quadrática vai depender do valor obtido pela expressão: Δ = b<sup>2</sup> – 4. ac, o qual é chamado de discriminante. <br>
+                        <br>
+                        Assim, <br>
+                        <br>
+
+
+                        <ul class="lead">
+                            <li>Se Δ > 0, a função terá duas raízes reais e distintas (x1 ≠ x2);</li>
+                            <li>Se Δ , a função não terá uma raiz real;</li>
+                            <li>Se Δ , a função não terá uma raiz real;</li>
+                        </ul>
+                        <br>
+                        <h3 class="fw-bold lh-1 mb-3" id="grafico">Gráfico da função quadrática</h3> <br>
+                        O gráfico das funções do 2º grau são curvas que recebem o nome de parábolas. Diferente das funções do 1º grau, onde conhecendo dois pontos é possível traçar o gráfico, nas funções quadráticas são necessários conhecer vários pontos.<br>
+                        <br>
+                        A curva de uma função quadrática corta o eixo x nas raízes ou zeros da função, em no máximo dois pontos dependendo do valor do discriminante (Δ). Assim, temos:<br>
+                        <br>
+                        <ul>
+                           <li>Se Δ > 0, o gráfico cortará o eixo x em dois pontos;</li>
+                           <li>Se Δ</li>
+                           <li>Se Δ = 0, a parábola tocará o eixo x em apenas um ponto.</li>
+                        </ul>
+                        <br>
+                        Existe ainda um outro ponto, chamado de vértice da parábola, que é o valor máximo ou mínimo da função. Este ponto é encontrado usando-se a seguinte fórmula:<br>
+                        <img id="form" src="formula-exemplo.png" alt="formula">
+                        <br>
+                        O vértice irá representar o ponto de valor máximo da função quando a parábola estiver voltada para baixo e o valor mínimo quando estiver para cima. <br>
+                        <br>
+                        É possível identificar a posição da concavidade da curva analisando apenas o sinal do coeficiente a. Se o coeficiente for positivo, a concavidade ficará voltada para cima e se for negativo ficará para baixo, ou seja:
+
+                        <img id="form" src="funcao2grauconcavidade.webp" alt="concavidade"> <br>
+                    
+                        Assim, para fazer o esboço do gráfico de uma função do 2º grau, podemos analisar o valor do a, calcular os zeros da função, seu vértice e também o ponto em que a curva corta o eixo y, ou seja, quando x = 0. <br>
+                        <br>
+                        A partir dos pares ordenados dados (x, y), podemos construir a parábola num plano cartesiano, por meio da ligação entre os pontos encontrados.
+
                     </div>
+
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <pre></pre>
                     </div>
                 </div>
                 </div>
@@ -184,7 +201,7 @@
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"></a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"></a></li>
               </ul>
-              <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+              <p class="text-center text-muted">&copy; 2022 Informática, IFPI</p>
             </footer>
           </div>
           
