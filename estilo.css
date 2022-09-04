@@ -33,3 +33,12 @@
 #form {
     padding: 15px;
 } 
+
+#resultado {
+    margin-top:15px;
+}
+
+#btn {
+    border: 1px solid gainsboro;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
