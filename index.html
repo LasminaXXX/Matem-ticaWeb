@@ -71,7 +71,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link link-dark">
+                    <a href="#atividade" class="nav-link link-dark">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
                     Atividades
                     </a>
@@ -182,16 +182,39 @@
                         Assim, para fazer o esboço do gráfico de uma função do 2º grau, podemos analisar o valor do a, calcular os zeros da função, seu vértice e também o ponto em que a curva corta o eixo y, ou seja, quando x = 0. <br>
                         <br>
                         A partir dos pares ordenados dados (x, y), podemos construir a parábola num plano cartesiano, por meio da ligação entre os pontos encontrados.
+                        <br>
+                        <br>
+                        <h3 id="atividade" class="fw-bold lh-1 mb-3">Atividade</h3>
+                        Em relação ao gráfico da função <b>f(x) = – x <sup>2</sup> + 4x – 3</b>, pode−se afirmar: <br>
+                        <br>
+                        <div id="atividade">
+                            <input type="radio" id="letraA" name="fav_language" value="A">
+                            <label for="letraA">A - é uma parábola de concavidade voltada para cima</label><br>
+                            <br>
+                            <input type="radio" id="letraB" name="fav_language" value="B">
+                            <label for="letraB">B - seu vértice é o ponto V(2,1)</label><br>
+                            <br>
+                            <input type="radio" id="letraC" name="fav_language" value="C">
+                            <label for="letraC">C - intercepta o eixo das abscissas em P(–3, 0) e Q(3, 0)</label> <br>
+                            <br>
+                            <input type="radio" id="letraD" name="fav_language" value="D">
+                            <label for="letraD">D - o seu eixo de simetria é o eixo das ordenadas</label> <br>
+                            <br>
+                            <input type="radio" id="letraE" name="fav_language" value="E">
+                            <label for="letraE">E - intercepta o eixo das ordenadas em R(0, 3)</label> <br>
+                            <br>
 
+                            <button id="btn" onclick="resposta()" type="submit">Gabarito</button>
+                            <h5 id="resultado"></h5>
+
+                        </div>
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     </div>
                 </div>
                 </div>
-            </div>
-         </div>
-
+        </div>
          <div class="container">
             <footer class="py-3 my-4">
               <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -205,6 +228,7 @@
             </footer>
           </div>
           
-
+          
+<script src="quest.js"></script>
     </body>
 </html>
