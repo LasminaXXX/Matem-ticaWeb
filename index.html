@@ -10,6 +10,7 @@
         <title>Matemática</title>
         <link rel="shortcut icon" href="sigma.png">
         <link href="bootstrap.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-3.5.0.min.js"></script>
     </head>
 
 
@@ -133,7 +134,7 @@
                         Confira abaixo o passo-a-passo por meio um exemplo de resolução da função quadrática:<br>
                         <br>
                         <h5 class="lead"> <b><u> Exemplo: </u></b></h5>
-                        Encontre os zeros da função f(x) = x2 – 5x + 6. <br>
+                        Encontre os zeros da função f(x) = x <sup>2</sup> – 5x + 6. <br>
                         <br>
                         <strong>Solução:</strong><br>
                         <br>
@@ -155,8 +156,8 @@
 
                         <ul class="lead">
                             <li>Se Δ > 0, a função terá duas raízes reais e distintas (x1 ≠ x2);</li>
-                            <li>Se Δ , a função não terá uma raiz real;</li>
-                            <li>Se Δ , a função não terá uma raiz real;</li>
+                            <li>Se Δ  < 0, a função não terá uma raiz real;</li>
+                            <li>Se Δ = 0, a função terá duas raízes reais e iguais (x1 = x2);</li>
                         </ul>
                         <br>
                         <h3 class="fw-bold lh-1 mb-3" id="grafico">Gráfico da função quadrática</h3> <br>
@@ -166,7 +167,7 @@
                         <br>
                         <ul>
                            <li>Se Δ > 0, o gráfico cortará o eixo x em dois pontos;</li>
-                           <li>Se Δ</li>
+                           <li>Se Δ < 0, o gráfico não cortará o eixo x em nenhum ponto;</li>
                            <li>Se Δ = 0, a parábola tocará o eixo x em apenas um ponto.</li>
                         </ul>
                         <br>
@@ -187,27 +188,42 @@
                         <h3 id="atividade" class="fw-bold lh-1 mb-3">Atividade</h3>
                         Em relação ao gráfico da função <b>f(x) = – x <sup>2</sup> + 4x – 3</b>, pode−se afirmar: <br>
                         <br>
-                        <div id="atividade">
-                            <input type="radio" id="letraA" name="fav_language" value="A">
-                            <label for="letraA">A - é uma parábola de concavidade voltada para cima</label><br>
-                            <br>
-                            <input type="radio" id="letraB" name="fav_language" value="B">
-                            <label for="letraB">B - seu vértice é o ponto V(2,1)</label><br>
-                            <br>
-                            <input type="radio" id="letraC" name="fav_language" value="C">
-                            <label for="letraC">C - intercepta o eixo das abscissas em P(–3, 0) e Q(3, 0)</label> <br>
-                            <br>
-                            <input type="radio" id="letraD" name="fav_language" value="D">
-                            <label for="letraD">D - o seu eixo de simetria é o eixo das ordenadas</label> <br>
-                            <br>
-                            <input type="radio" id="letraE" name="fav_language" value="E">
-                            <label for="letraE">E - intercepta o eixo das ordenadas em R(0, 3)</label> <br>
-                            <br>
-
-                            <button id="btn" onclick="resposta()" type="submit">Gabarito</button>
-                            <h5 id="resultado"></h5>
-
+                        <div class="container-fluid">
+                            <div class="container">
+                                <div class="lead">
+                                    <form method="POST" id="awnser">
+                                        <p>
+                                            <input type="radio" id="a" name="resposta" value="a">
+                                            <label for="a">A - é uma parábola de concavidade voltada para cima</label>
+                                        </p>
+                    
+                                        <p>
+                                            <input type="radio" id="b" name="resposta" value="b" data-resultado="true">
+                                            <label for="b">B - seu vértice é o ponto V(2,1)</label>
+                                        </p>
+                    
+                                        <p>
+                                            <input type="radio" id="c" name="resposta" value="c" >
+                                            <label for="c">C - intercepta o eixo das abscissas em P(–3, 0) e Q(3, 0)</label>
+                                        </p>
+                    
+                                        <p>
+                                            <input type="radio" id="d" name="resposta" value="d">
+                                            <label for="d">D - o seu eixo de simetria é o eixo das ordenadas</label>
+                                        </p>
+                    
+                                        <p>
+                                            <input type="radio" id="e" name="resposta" value="e">
+                                            <label for="e">E - intercepta o eixo das ordenadas em R(0, 3)</label>
+                                        </p>
+                    
+                                        <input type="submit" name="Validar" value="Gabarito">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
+                    </body>
+                    </html>
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
