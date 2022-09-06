@@ -42,3 +42,13 @@
     border: 1px solid gainsboro;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.resultado_certo{
+    color: #37ad17;
+    font-weight: bolder;
+}
+
+.resultado_errado {
+    color: red;
+    font-weight: bolder;
+}
