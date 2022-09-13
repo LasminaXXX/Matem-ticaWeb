@@ -52,3 +52,45 @@
     color: red;
     font-weight: bolder;
 }
+
+
+.body {
+    height: max-content;
+    background-image: url('ifpi2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#g {
+    border: 1px gainsboro solid;
+}
+
+.caption {
+    border: 1px gainsboro solid;
+    padding: 2px;
+    background-color: white;
+}
+
+#legend {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+#componentes {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#video {
+    margin-top: 40px;
+}
