@@ -85,12 +85,6 @@
     font-weight: 700;
 }
 
-#componentes {
-    color: black;
-    display: flex;
-    justify-content: center;
-}
-
 #video {
     margin-top: 40px;
 }
